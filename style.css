@@ -2,6 +2,11 @@ body {
   font-family: "Jost", sans-serif;
 }
 
+header {
+  width: 100%;
+  background-color: white;
+}
+
 header .bandeau {
   position: static;
   height: 24px;
@@ -333,6 +338,10 @@ main .descriptif_produit .premier {
   display: flex;
 }
 
+main .descriptif_produit .premier u {
+  font-weight: 600;
+}
+
 main .descriptif_produit .premier img {
   max-height: 900px;
   max-width: 1200px;
@@ -359,19 +368,21 @@ main .descriptif_produit .second {
 }
 
 main .descriptif_produit .second p {
+  margin-top: auto;
+  margin-bottom: auto;
   margin-right: 77px;
-  font-family: "Jost";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: right;
+}
+
+main .descriptif_produit .second p b {
+  font-weight: 600;
 }
 
 main .descriptif_produit .second img {
@@ -427,6 +438,15 @@ main .descriptif_produit .troisieme .text p {
       -ms-flex-align: center;
           align-items: center;
   margin: 5px 0px 77px 77px;
+}
+
+main .descriptif_produit .troisieme .text p b {
+  font-weight: 600;
+}
+
+main .descriptif_produit .troisieme .text p strong {
+  font-family: "NIHAD";
+  font-weight: 900;
 }
 
 main .vente {
@@ -521,7 +541,17 @@ main .vente .items .item .pres .titre {
   margin-bottom: 10px;
 }
 
-main .vente .items .item .pres .prix,
+main .vente .items .item .pres .prix {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+main .vente .items .item .pres .prix b {
+  font-weight: 600;
+}
+
 main .vente .items .item .pres .couleur {
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -576,6 +606,7 @@ main .information .info {
 main .information .info img {
   max-width: 24px;
   max-height: 24px;
+  margin-bottom: 16px;
 }
 
 main .information .info p {
@@ -589,6 +620,73 @@ main .information .info p {
 
 main .information .info h1 {
   text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+footer {
+  color: white;
+  background: #0c0c0d;
+}
+
+footer .container {
+  margin-right: 64px;
+  margin-left: 64px;
+}
+
+footer .container .submit {
+  max-width: 402px;
+  max-height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6px;
+  margin-bottom: 24px;
+}
+
+footer .container .submit button {
+  background: white;
+  border-radius: 0px 10px 10px 0px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  width: 25%;
+  height: 48px;
+  border: none;
+}
+
+footer .container .submit input {
+  width: 75%;
+  height: 48px;
+  background: #f3f3f3;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+}
+
+footer .container .pad {
+  padding-top: 56px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer .container .pad b {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+footer .container h2 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+footer .container .up {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }

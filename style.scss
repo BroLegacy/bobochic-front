@@ -2,6 +2,8 @@ body {
   font-family: "Jost", sans-serif;
 }
 header {
+  width: 100%;
+  background-color: white;
   .bandeau {
     position: static;
     height: 24px;
@@ -223,6 +225,9 @@ main {
   .descriptif_produit {
     .premier {
       display: flex;
+      u {
+        font-weight: 600;
+      }
       img {
         max-height: 900px;
         max-width: 1200px;
@@ -243,15 +248,18 @@ main {
       display: flex;
 
       p {
+        margin-top: auto;
+        margin-bottom: auto;
         margin-right: 77px;
-        font-family: "Jost";
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        display: flex;
         align-items: center;
         text-align: right;
+        b {
+          font-weight: 600;
+        }
       }
       img {
         max-width: 50%;
@@ -287,6 +295,13 @@ main {
           line-height: 24px;
           align-items: center;
           margin: 5px 0px 77px 77px;
+          b {
+            font-weight: 600;
+          }
+          strong {
+            font-family: "NIHAD";
+            font-weight: 900;
+          }
         }
       }
     }
@@ -345,7 +360,15 @@ main {
             text-align: center;
             margin-bottom: 10px;
           }
-          .prix,
+          .prix {
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: 400;
+            b {
+              font-weight: 600;
+            }
+          }
           .couleur {
             font-weight: 600;
             letter-spacing: 0.05em;
@@ -382,6 +405,7 @@ main {
       img {
         max-width: 24px;
         max-height: 24px;
+        margin-bottom: 16px;
       }
       p {
         font-style: normal;
@@ -395,7 +419,64 @@ main {
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
+        font-weight: 600;
       }
+    }
+  }
+}
+
+footer {
+  color: rgba(255, 255, 255, 1);
+  background: #0c0c0d;
+  .container {
+    margin-right: 64px;
+    margin-left: 64px;
+    .submit {
+      max-width: 402px;
+      max-height: 48px;
+      display: flex;
+      margin-top: 6px;
+      margin-bottom: 24px;
+      button {
+        background: rgba(255, 255, 255, 1);
+        border-radius: 0px 10px 10px 0px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        width: 25%;
+        height: 48px;
+        border: none;
+      }
+      input {
+        width: 75%;
+        height: 48px;
+        background: rgba(243, 243, 243, 1);
+        border-radius: 10px 0px 0px 10px;
+        border: none;
+      }
+    }
+    .pad {
+      padding-top: 56px;
+      margin-bottom: 25px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      b {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .up {
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
     }
   }
 }

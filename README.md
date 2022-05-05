@@ -1,2 +1,3 @@
-# bobochic-front
- Test technique pour bobochic Paris
+# test bobochic front
+
+Lien netlify : https://boboxbloon.netlify.app/
